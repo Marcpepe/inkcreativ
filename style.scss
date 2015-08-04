@@ -458,6 +458,10 @@ a:hover,a:focus{
 //////
 //
 .footer{
+	a img{
+		position: relative;
+		top:-2.3rem;
+	}
 	button[type="submit"]{
 		position: absolute;
 		z-index: 2;
@@ -689,10 +693,13 @@ a:hover,a:focus{
 	border-color: #ffffff;
 	color: #ffffff;
 	&:hover{
-			 background-color:transparent;
-			 color:$primary-color;
+			 background-color:$primary-color;
+			 color:#ffffff !important;
 			 border-color:$primary-color;
 			 @extend .trans;
+			 i{
+			 	color:#ffffff !important;
+			 }
 
 		}
 }
@@ -839,16 +846,54 @@ button.border.round, .button.border.round {
   bottom: 10px;
   z-index: 2;
 }
-.flex-control-paging li a:hover {
-  background: $primary-color;
-  @extend .trans;
-}
 .slides li{
 	height:400px;
 	h1,h2,h3,h4,h5,h6{
 		font-size:2.25rem;
 	}
 }
+#testimonials {
+	.flex-control-nav {
+		bottom: 10px;
+		z-index: 2;
+	}
+	.flex-viewport{
+    	margin-bottom: -4.3rem;
+	}
+	.slides li{
+		height:500px;
+		position: relative;
+		h1,h2,h3,h4,h5,h6{
+			font-size:2.25rem;
+			margin-bottom: 0;
+		}
+		img{
+			opacity: .7;	
+		}
+	}
+	.container{
+		position: absolute;
+		width: 70%;
+		left: 15%;
+		z-index: 10
+	}
+	.author{
+		text-transform: uppercase;
+		font-size: 1rem;
+		font-weight: 400;
+		width: 100%;
+		text-align: center;
+		color: #ffffff;
+		display: block;
+
+	}
+}
+
+.flex-control-paging li a:hover {
+  background: $primary-color;
+  @extend .trans;
+}
+
 
 //
 //////
@@ -941,6 +986,7 @@ button.border.round, .button.border.round {
 	}
 	.status{
 	background-color:#95ce28;
+	border-radius: 80px;
 	}
 	.status-handle{
 	background-color: #555;
@@ -1170,6 +1216,7 @@ box-shadow: inset 0px 26px 43px -29px rgba(0,0,0,0.12);
 	height: 100%;
 	position: absolute;
 	z-index: 4;
+	border-radius: 80px;
 }
 .status-handle{
 	border-radius: 80px;
@@ -1860,6 +1907,7 @@ table thead tr th, table thead tr td {
   background-size: cover !important;
   z-index: 0;
   background-position: 50% 50% !important;
+  height: 100%;
 
 }
 .bg-parallax{
@@ -2176,8 +2224,35 @@ table thead tr th, table thead tr td {
 //
 .filtre-deal-room{
 	border-bottom:4px solid #dedede;
-	padding:2rem 0 4rem 0;
+	padding:2rem 0 5.5rem 0;
 	background-color: #ffffff;
+	position: relative;
+	.label{
+		padding-left: 0;
+	}
+}
+.collapse{
+	position: absolute;
+	bottom:-115px;
+	right: 0;
+	z-index: 5;
+	cursor: pointer;
+	width: 58px;
+	height: 61px;
+}
+.collapse-back-container{
+	position: relative;
+	display: none;
+	margin-top:-32px;
+	z-index: 6; 
+}
+.collapse-back{
+	display: none;
+	display: block;
+	margin: auto;
+	width: 58px;
+	height: 61px;
+    cursor: pointer;
 }
 .deal-room-form{
 	padding: 3rem 0 0;
@@ -2225,7 +2300,7 @@ table thead tr th, table thead tr td {
 //
 
 .logos-grid{
-	padding:4rem 0;
+	padding:3rem 0 6rem;
 	margin:0;
 	li{
 		width:25%;

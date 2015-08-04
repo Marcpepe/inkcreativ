@@ -14,8 +14,14 @@
           </ul>
         </div>
     </section>
+    <section class="collapse-back-container">
+        <div class="row">
+            <span class="collapse-back"><img src="img/collapse.png"></span>
+        </div>
+	</section>
     <section class="filtre-deal-room">
-    	<form class="deal-room-form row ">
+    	<form class="deal-room-form row relative">
+    	<span class="collapse"><img src="img/collapse.png"></span>
     		<ul>
     			<li>
 	    			<select id="single-bsg-pilot">
@@ -45,10 +51,13 @@
     		<hr/>
     		<div class="large-6 columns">
     			<span class="label">Taux d'intérêt</span><br/>
-					  		
+    			<!-- Range slider l'input est utilisé pour créer le range slider , plus d'inos: https://github.com/IonDen/ion.rangeSlider -->
+						<input type="text" id="taux_interet" name="taux-interet" value="" />
 					</div>
     		<div class="large-6 columns">
     			<span class="label">Maturité</span><br/>
+    			<!-- Range slider-->
+    			<input type="text" id="maturite" name="maturite" value="" />
     		</div>
     	</form>
     </section>

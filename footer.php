@@ -130,8 +130,8 @@
     <script src="js/init/flexslider.init.js"></script>
     <script src="js/init/flexslider_thumbs.init.js"></script>
 
-    <script src="js/vendor/jquery-ui-1.8.16.custom.min"></script>
-    <script src="js/vendor/jQRangeSlider-min.js"></script>
+    <script src="js/vendor/ion.rangeSlider.min.js"></script>
+    <script src="js/init/rangeslider.init.js"></script>
 
     <script src="js/vendor/wow.min.js"></script>
     <script src="js/init/wow.init.js"></script>

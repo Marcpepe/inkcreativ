@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
     <link rel="stylesheet" href="css/ink_classes.css" />
-    <link rel="stylesheet" href="css/iThing.css" />
+    <link rel="stylesheet" href="css/rangeslider.css" />
     <link rel="stylesheet" href="css/wesharebondsicons.css" />
     <link rel="stylesheet" href="fonts/foundation-icons/foundation-icons.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,800italic,800,700italic,700,600italic,600' rel='stylesheet' type='text/css'>

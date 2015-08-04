@@ -15,7 +15,15 @@ function alignVertical(){
 	that.css('padding-top', padAmount);
 	});
 }
-
+function alignVerticalTestimonials(){
+	$('.align-vertical-testimonials').each(function(){
+	var that = $(this);
+	var height = that.height();
+	var parentHeight = that.parent().height();
+	var padAmount = (parentHeight / 2) - (height/2);
+	that.css('padding-top',( padAmount-27));// car viewport a une marge bottom de -3.5rem (soit 54px) le tout divise par 2, bref c'est centre
+	});
+}
 // LOAD ////////////////////////////////
 /////////////////////////////
 ////////////////////
@@ -24,7 +32,7 @@ function alignVertical(){
 //
 
 jQuery(window).load(function() {
-$("#slider").rangeSlider();
+
 }); 
 
 // READY ////////////////////////////////
@@ -35,7 +43,17 @@ $("#slider").rangeSlider();
 //
 
 jQuery(document).ready(function() {
-
+// COLLAPSE FORMULAIRE DEAL ROOM ***********************	
+$('.collapse').click( function() { 
+	$('.filtre-deal-room').slideToggle();
+	$('.collapse-back-container').show();
+	return false;
+})
+$('.collapse-back').click( function() { 
+	$('.filtre-deal-room').slideToggle();
+	$('.collapse-back-container').hide();
+	return false;
+})
 // SMOOTH SCROLL ***********************	
 $('.scrollTo').click( function() { // Au clic sur un élément
 	var page = $(this).attr('href'); // Page cible
@@ -73,7 +91,7 @@ $(this).css('background-position', '50% 0%');
 // ALIGN VERTICAL ***********************
 
 	alignVertical();
-
+	alignVerticalTestimonials();
 
 // FIN READY ******************************** 
 
@@ -99,9 +117,8 @@ topbar_transparent = $('#topbar_transparent').height();
 	$('.fullscreen').find('.slides li').css('height',($(window).height()));
 }
 // ALIGN VERTICAL ***********************
-
 	alignVertical();
-
+	alignVerticalTestimonials();
 // FIN RESIZE ******************************** 
 });
 

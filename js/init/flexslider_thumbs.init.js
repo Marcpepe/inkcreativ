@@ -9,13 +9,12 @@ jQuery(window).load(function() {
     
 // FLEXSLIDER ******************************** 
 
-    jQuery('.flexslider').flexslider({
-        animation: "slide",
-        controlNav: "thumbnails",
-       
-        easing: "swing",
-         
-    });
+	$('.flexslider').flexslider({
+		animation: "slide",
+		controlNav: "thumbnails",
+		directionNav:false
+	});
+
 
 // FIN LOAD *****************************
 }); 
